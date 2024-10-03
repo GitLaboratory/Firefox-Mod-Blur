@@ -263,7 +263,7 @@ Order of Toolbars
 }
 
 /* TABS TOOLBAR */
-#titlebar {
+.browser-titlebar {
   order: 1 !important;
 }
 
@@ -273,7 +273,7 @@ Order of Toolbars
 }
 
 /* Extra titlebar menu (above or below tabs, opens with alt) */
-#titlebar #toolbar-menubar {
+.browser-titlebar #toolbar-menubar {
   order: 0 !important;
 }
 
@@ -302,13 +302,13 @@ Order of Toolbars
   background-color: var(--firefoxcss-item-bg-color) !important;
 }
 
-/* Fix some custom firefox themes that break */
+/* Fix some custom firefox themes that break 
 #navigator-toolbox {  
   :root[lwtheme-image] & 
   {
     background-image: var(--lwt-additional-images) !important;
   } 
-}
+}*/
 
 /* Avoids bright flash */
 #tabbrowser-tabpanels {
@@ -339,7 +339,7 @@ Order of Toolbars
 /* Remove Line above search engine selection in search bar */
 #urlbar .search-one-offs .search-panel-one-offs-header-label,
 /* Remove lefover window buttons from extra menu bar (when pressing alt)*/
-#titlebar #toolbar-menubar .titlebar-buttonbox-container,
+.browser-titlebar #toolbar-menubar .titlebar-buttonbox-container,
 /* Private browser icons remove and change main menu to purple */
 #private-browsing-indicator-with-label,
 .private-browsing-indicator,
@@ -371,7 +371,7 @@ Order of Toolbars
 }*/
 
 /* Fix the Fullscreen changing padding on other bars.
-:root[tabsintitlebar][sizemode="maximized"] #titlebar {
+:root[tabsintitlebar][sizemode="maximized"] .browser-titlebar {
   -moz-appearance: none !important;
   appearance: none !important;
 }*/
@@ -729,7 +729,7 @@ about:config -> svg.context-properties.content.enabled -> true*/
     background-color 0.15s ease !important;
 }
 
-#titlebar #TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-background {
+.browser-titlebar #TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-background {
   margin-block: 2px !important;
 }
 
@@ -1652,7 +1652,7 @@ toolbar
   }
 
   /* TABS TOOLBAR */
-  #titlebar {
+  .browser-titlebar {
     order: 0 !important;
   }
 
@@ -1662,7 +1662,7 @@ toolbar
   }
 
   /* Extra titlebar menu (above or below tabs, opens with alt) */
-  #titlebar #toolbar-menubar {
+  .browser-titlebar #toolbar-menubar {
     order: 0 !important;
   }
 
